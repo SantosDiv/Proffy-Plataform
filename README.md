@@ -2,7 +2,7 @@
 Plataforma de ensino a distância. Layout replicado na semana NLW, promovido pela <strong> Rocketseat</strong>. 
 
 <h2> Tecnologias </h2>
-<li> Linguagens: html, css e JavaScript</li>
+<li> Linguagem:JavaScript</li>
 <li> IDE: VSCode</li>
 
 <h2> Objetivo do Projeto </h2>
