@@ -1,0 +1,27 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "Plataforma de ensino a distância. Layout replicado na semana NLW, promovido pela <strong> Rocketseat</strong>.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantosDiv/Proffy-Plataform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantosDiv/Proffy-Plataform/issues"
+  },
+  "homepage": "https://github.com/SantosDiv/Proffy-Plataform#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
