@@ -93,7 +93,7 @@ function pageGiveClasses (req,res) {
     return res.render("giveClasses.html", {subjects, weekdays}) // dirname é o caminho da pasta
 }
 
-//Servidor
+//Servidor (Startar servidor: npm run dev)
 // pegar uma dependencia
 const express = require('express');
 const server = express();

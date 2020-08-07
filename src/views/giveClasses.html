@@ -77,10 +77,11 @@
                         <legend>
                             Horários disponíveis
                             <button type="button" id="add-time"> + Novo Horário</button>
+                            <button type="button" id="remove-time"> - Remover Horário</button>
                         </legend>
 
                         <div class="schedule-item">
-                            <div class="select-block">
+                            <div class="select-block this_not">
                                 <label for="weekday">Dia da semana</label>
                                 <select name="weekday[]">
                                     <option value="">Selecione uma opção</option>
@@ -99,8 +100,8 @@
                             <div class="input-block">
                                 <label for="time-to">Até</label>
                                 <input type="time" name="time_to[]" required>
-                                
                             </div>
+                            
                         </div> 
                         
                     </fieldset>

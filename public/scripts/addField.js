@@ -1,4 +1,4 @@
-// Procurar o botão
+// Procurar o botão 
 document.querySelector("#add-time")
 // Quando clicar no botão
 .addEventListener('click', cloneField) //To aqui adicionando um 'ouvidor de Evento', ou seja, ele vai ver qual evento o meu usuário está fazendo. Neste caso um 'click' e ai, quando ele clicar ele vai ativar a função cloudFiled.
