@@ -13,7 +13,7 @@ Database.then(async (db) => {
 
     // Tabela Schedule
     classValue = {
-        subject: "Química",
+        subject: 1,
         cost: "40",
         // o proffy_id virá com o banco de datdos
     }
@@ -36,6 +36,7 @@ Database.then(async (db) => {
     // inserindo os dados pela função creatProffy
     //await creatProffy(db, {proffyValue, classValue, classScheduleValues});
 
+    
     // consultar os dados inseridos
 
     // todos os proffys
@@ -51,8 +52,20 @@ Database.then(async (db) => {
         JOIN classes ON (classes.proffy_id = proffys.id)
         WHERE classes.proffy_id = 1;
     `)
-    console.log(selectCalssesAndProffys);
+    //console.log(selectCalssesAndProffys);
 
-    // 
+    // o horário que a pessoa trabalha, por exemplo, é das 8h - 18h
+    // o horario do time_from (8h) precisa ser menor ou igual ao horário solicitado
+    // o time_to precisa ser acima
 
+    const selectClassesSchedules = await db.all(`
+        SELECT class_schedule.*
+        FROM class_schedule
+        WHERE class_schedule.class_id = 1   
+        AND class_schedule.weekday = "0"
+        AND class_schedule.time_from <= "420" 
+        AND class_schedule.time_to > "1300"
+    `)
+
+    console.log(selectClassesSchedules);
 })
