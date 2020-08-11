@@ -3,7 +3,7 @@
 const express = require('express');
 const server = express();
 
-const { pageLanding, pageStudy, pageGiveClasses, saveClasses } = require('./pages');
+const { pageLanding, pageStudy, pageGiveClasses, saveClasses, pageSucess } = require('./pages');
 
 //Configurar o nunjukts
 const nunjucks = require('nunjucks'); //Atribuindo poderes ao HTML com o Tamplate Engine - Ele usa de estratégias de programação para fazer o HTML
@@ -23,7 +23,9 @@ server //Confirguações do servidor. todos os Pontos referec-se a esse 'server'
 //Pegando os caminhos das pastas por .get
 .get("/", pageLanding)
 .get("/study", pageStudy)
+.get("/sucess", pageSucess)
 .get("/giveClasses", pageGiveClasses)
 .post("/save-classes", saveClasses)
+
 .listen(5500) // express é uma function. Logo precisa dos (). O listem é ouvir. e coloco uma porta
 

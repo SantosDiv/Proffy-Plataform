@@ -12,12 +12,12 @@ const subjects = [
 ]
 const weekdays = [
     "Domingo",
-    "Terça-feira",
     "Segunda-feira",
-    "Quinta-feira",
+    "Terça-feira",
     "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-Feira",
     "Sábado",
-    "Sexta-feira",
 ]
 
 //Funcionalidades da aplicação
